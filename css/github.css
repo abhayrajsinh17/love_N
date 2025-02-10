@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Shadows+Into+Light+Two&display=swap');
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(-45deg, #fff0f5, #fee4e1, #b4d3dd, #ffc3a0);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@-webkit-keyframes Gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#front {
+    z-index: 1;
+    position: absolute;
+    background-color: #0b6570;
+    width: 750px;
+    height: 800px;
+    text-align: center;
+    transition: transform 1s ease-in-out;
+    transform-origin: left;
+    border-radius: 12px;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding-top: 5%;
+}
+
+.open-card {
+    transform: rotateY(180deg);
+}
+
+#front-title {
+    max-width: 85%;
+    padding-bottom: 3%;
+}
+
+#front-pic {
+    max-width: 75%;
+}
+
+#inside {
+    z-index: 0;
+    position: absolute;
+    background-color: white;
+    width: 750px;
+    height: 800px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding-top: 5%;
+}
+
+#inside-recipient {
+    font-size: 24px;
+    font-weight: bold;
+    color: #D63384;
+    padding: 20px 0;
+}
+
+#message {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    font-family: 'Great Vibes', cursive;
+    text-align: left;
+    padding: 0 40px;
+    text-indent: 20px; /* Indent first line of each paragraph */
+}
+
+/* Adding paragraph spacing */
+#message p {
+    margin-bottom: 15px; /* Space between paragraphs */
+}
+
+#inside-sender {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #D63384;
+    padding-bottom: 20px;
+}
+
+#inside-pic {
+    width: auto;
+    height: 160px;
+    margin-bottom: 25px;
+}
